@@ -1,325 +1,581 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chintala Swathi's professional portfolio - Java Developer, projects, skills and experience.">
-    <title>Chintala Swathi | Java Developer</title>
+    <meta name="description" content="Chintala Swathi - Java Developer Portfolio">
+    <title>Chintala Swathi | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-    <a href="#home" class="logo">SC<span>..</span></a>
+    <!-- NAVBAR -->
+    <header class="header">
+        <a href="#home" class="logo">Chintala Swathi</a>
 
-    <nav id="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <button class="menu-btn" id="menuBtn"
+                aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-    <button class="menu-btn" id="menuBtn"
-            aria-label="Toggle navigation"
-            aria-expanded="false">☰</button>
-</header>
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<main>
 
-<!-- HOME SECTION -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <p class="tag">WELCOME TO MY PORTFOLIO</p>
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
 
-        <h1>Hi, I'm <span>Chintala Swathi</span></h1>
-        <h2>Aspiring Java Developer</h2>
-
-        <p class="intro">
-            Computer Science Engineering student passionate about
-            Java development, backend technologies and building
-            real-world applications.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">Explore Projects</a>
-            <a href="#contact" class="btn outline">Contact Me</a>
-
-            <a href="assets/Swathi_Resume.pdf"
-               class="btn resume-btn"
-               download="Swathi_Chintala_Resume.pdf">
-                ⬇ Download Resume
-            </a>
-        </div>
-
-        <div class="social">
-            <a href="https://github.com/chintala4swathi-boop"
-               target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-
-            <a href="https://www.linkedin.com/in/chintala-swathi-91b274336/"
-               target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        </div>
-    </div>
-
-    <div class="hero-card">
-        <div class="code">
-            <p><span>class</span> Developer {</p>
-            <p>&nbsp;&nbsp;Name = "Swathi";</p>
-            <p>&nbsp;&nbsp;Role = "Java Developer";</p>
-            <p>&nbsp;&nbsp;Skills = "Java, SQL";</p>
-            <p>&nbsp;&nbsp;Learning = "Spring Boot";</p>
-            <p>}</p>
-        </div>
-    </div>
-</section>
-
-<!-- ABOUT SECTION -->
-<section id="about">
-    <h2 class="heading">About <span>Me</span></h2>
-
-    <div class="about-card">
-        <p>
-            I am pursuing B.Tech in Computer Science Engineering
-            at Amrita Sai Institute of Science and Technology.
-
-            I have a foundation in Java programming, OOP concepts,
-            data structures, SQL and web technologies.
-
-            I enjoy developing practical applications and
-            continuously improving my technical skills.
-        </p>
-
-        <div class="stats">
-            <div>
-                <h3>8.78</h3>
-                <p>B.Tech GPA</p>
-            </div>
-
-            <div>
-                <h3>2027</h3>
-                <p>Graduation</p>
-            </div>
-
-            <div>
-                <h3>CSE</h3>
-                <p>Department</p>
+        <div class="home-img">
+            <div class="glow-circle">
+                <img src="assets/swathi-profile.jpg"
+                     alt="Chintala Swathi"
+                     class="profile-photo">
             </div>
         </div>
-    </div>
-</section>
 
-<!-- SKILLS SECTION -->
-<section id="skills">
-    <h2 class="heading">Technical <span>Skills</span></h2>
+        <div class="home-content">
 
-    <div class="skill-container">
-        <div class="skill">Java</div>
-        <div class="skill">Python Basics</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">SQL</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">Spring Boot</div>
-        <div class="skill">OOP Concepts</div>
-        <div class="skill">Data Structures</div>
-        <div class="skill">Git & GitHub</div>
-    </div>
-</section>
+            <h3>Hello, Myself</h3>
+            <h1>CHINTALA SWATHI</h1>
+
+            <h3 class="role-line">
+                And I'm a <span class="typing-text"></span>
+            </h3>
+
+            <p>
+                Passionate Computer Science student interested in Java
+                development, backend technologies and building useful
+                software applications. I enjoy learning new technologies
+                and solving problems through code.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="https://www.linkedin.com/in/chintala-swathi-91b274336/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/chintala4swathi-boop"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.instagram.com/swathichintala934/?hl=en"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/918464029493"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+            <div class="home-buttons">
+                <a href="assets/Swathi_Resume.pdf" class="btn" download>
+                    <i class="fa-solid fa-download"></i>
+                    Download CV
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-card">
+
+            <p>
+                I am Chintala Swathi, a Computer Science and Engineering
+                student at Amrita Sai Institute of Science and Technology.
+                I am passionate about Java development, software engineering
+                and backend development.
+            </p>
+
+            <p>
+                I have worked on academic and team projects and continuously
+                improve my programming, problem-solving and technical skills.
+                I am interested in learning new technologies and building
+                practical software applications.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section class="skills section" id="skills">
+
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+                <p>Core Java, OOP Concepts</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Technologies</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database</h3>
+                <p>SQL, MySQL</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Backend</h3>
+                <p>Spring Boot – Beginner</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+                <p>Programming Basics</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Tools</h3>
+                <p>Git, GitHub, VS Code</p>
+            </div>
+
+        </div>
+    </section>
+
 
 <!-- PROJECTS SECTION -->
-<section id="projects">
+<section class="projects section" id="projects">
+
     <h2 class="heading">My <span>Projects</span></h2>
 
-    <div class="project-container">
+    <div class="projects-container">
 
-        <article class="project">
-            <p class="project-number">01 / NETWORKING</p>
+        <!-- PROJECT 1: LAN DASHBOARD -->
+        <article class="project-card">
+            <div class="project-icon">
+                <i class="fa-solid fa-network-wired"></i>
+            </div>
+
             <h3>LAN-Based Network Monitoring Dashboard</h3>
 
             <p>
-                A Java desktop application to scan devices connected
-                to the same Local Area Network, view available IP and
-                MAC information, send messages and share files.
+                Developed a LAN-based network monitoring dashboard
+                to monitor network-related information and display
+                system connectivity details.
             </p>
 
-            <p class="award">🏆 Skillathon – 2nd Prize</p>
-
-            <div class="tech">
+            <span class="tech">
                 Java | Swing | Socket Programming
-            </div>
+            </span>
+
+            <a href="https://github.com/chintala4swathi-boop"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+                View Project
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </article>
 
-        <article class="project">
-            <p class="project-number">02 / WEB DEVELOPMENT</p>
+
+        <!-- PROJECT 2: FAMILY WEBSITE -->
+        <article class="project-card">
+            <div class="project-icon">
+                <i class="fa-solid fa-house-user"></i>
+            </div>
+
             <h3>Family Website</h3>
 
             <p>
-                A responsive family website designed to showcase
-                family members, share family photos, and display
-                special events, celebrations and memorable moments.
+                Created a responsive family website with a simple
+                and user-friendly interface to present family
+                information and details.
             </p>
 
-            <div class="tech">HTML | CSS | JavaScript</div>
+            <span class="tech">
+                HTML | CSS | JavaScript
+            </span>
+
+            <a href="https://github.com/chintala4swathi-boop"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+                View Project
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </article>
 
-        <article class="project">
-            <p class="project-number">03 / JAVA FULL STACK</p>
+
+        <!-- PROJECT 3: ONLINE EXAM PORTAL -->
+        <article class="project-card">
+            <div class="project-icon">
+                <i class="fa-solid fa-file-pen"></i>
+            </div>
+
             <h3>Online Exam Portal</h3>
 
             <p>
-                A web-based examination platform developed using
-                Spring Boot to support online examination and
-                examination-related activities.
+                Developed a web-based examination platform using
+                Java and Spring Boot with MySQL database integration
+                to manage online examination activities.
             </p>
 
-            <div class="tech">
+            <span class="tech">
                 Java | Spring Boot | MySQL | HTML | CSS | JavaScript
-            </div>
+            </span>
+
+            <a href="https://github.com/chintala4swathi-boop"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+                View Project
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </article>
 
-        <article class="project">
-            <p class="project-number">04 / AI & DEEP LEARNING</p>
-            <h3>DeepShield</h3>
+
+        <!-- PROJECT 4: DEEPSHIELD -->
+        <article class="project-card">
+            <div class="project-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>DeepShield – Deepfake Detection System</h3>
 
             <p>
                 An AI-based project focused on detecting manipulated
-                images, audio and videos using deep-learning techniques.
+                images, audio and videos using deep learning
+                techniques.
             </p>
 
-            <div class="tech">
-                Python | TensorFlow | Java | MySQL
-            </div>
+            <span class="tech">
+                Python | Java | TensorFlow | MySQL
+            </span>
+
+            <a href="https://github.com/chintala4swathi-boop"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+                View Project
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </article>
 
-        <article class="project">
-            <p class="project-number">05 / AGRITECH</p>
-            <h3>FarmVerse Nexus – Agriculture Chatbot</h3>
 
-            <p>
-                An agriculture chatbot developed using Spring Boot
-                and MySQL, integrated with Ollama for AI-assisted
-                agriculture-related responses.
-            </p>
-
-            <div class="tech">
-                Java | Spring Boot | MySQL | Ollama
+        <!-- PROJECT 5: FARMVERSE NEXUS -->
+        <article class="project-card">
+            <div class="project-icon">
+                <i class="fa-solid fa-seedling"></i>
             </div>
 
-            <a href="https://github.com/Guru6126/intelligent_farm_operations_platform_with_smart_agro_precision_system/tree/swathi-chatbot"
-               target="_blank" rel="noopener noreferrer">
-                View Repository
+            <h3>FarmVerse Nexus</h3>
+
+            <p>
+                An intelligent farm operations platform designed
+                to support agricultural activities with farm
+                management features and an AI-powered chatbot.
+            </p>
+
+            <span class="tech">
+                Java | Spring Boot | MySQL | Ollama
+            </span>
+
+            <a href="https://github.com/Guru6126/intelligent_farm_operations_platform_with_smart_agro_precision_system"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+                View Project
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
         </article>
 
     </div>
+
 </section>
 
-<!-- EXPERIENCE SECTION -->
-<section id="experience" style="display: none;">
-    <h2 class="heading">My <span>Experience</span></h2>
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience section" id="experience">
 
-    <div class="experience-card">
-        <h3>Infosys – Intern</h3>
-        <p class="muted">Ongoing</p>
-        <p>Currently working on chatbot-related tasks.</p>
-    </div>
+        <h2 class="heading">My <span>Experience</span></h2>
 
-    <div class="experience-card">
-        <h3>LazyIntern – Testing Engineer Intern</h3>
-        <p class="muted">22 December 2025 – 31 January 2026</p>
-        <p>Worked on manual software testing activities.</p>
-    </div>
-</section>
+        <!-- PASSWORD PANEL -->
+        <div class="password-box" id="passwordBox">
 
-<!-- EDUCATION AND CERTIFICATIONS -->
-<section id="education">
-    <h2 class="heading">Education & <span>Certifications</span></h2>
+            <div class="password-icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
 
-    <div class="education-card">
-        <h3>B.Tech – Computer Science Engineering</h3>
-        <p>Amrita Sai Institute of Science and Technology</p>
-        <p>GPA: 8.78 / 10</p>
-    </div>
+            <h3>Protected Experience</h3>
 
-    <div class="education-card">
-        <h3>Intermediate</h3>
-        <p>Sri Akshara Junior College, Kanchikacherla</p>
-        <p>GPA: 9.4 / 10</p>
-    </div>
+            <p>
+                Enter your password to view my internship details.
+            </p>
 
-    <div class="education-card">
-        <h3>SSC</h3>
-        <p>Zilla Parishad High School</p>
-        <p>GPA: 10 / 10</p>
-    </div>
+            <div class="password-input-wrap">
 
-    <div class="cert-list">
-        <h3>Certifications</h3>
-        <ul>
-            <li>Oracle – Java Foundations Badge</li>
-            <li>HackerRank – Java (Basic)</li>
-            <li>HackerRank – Problem Solving (Basic)</li>
-            <li>Java Foundation Certification</li>
-            <li>Java Programming Fundamentals</li>
-            <li>Programming Using Java</li>
-            <li>Java for Beginners</li>
-            <li>Basics in Python – Infosys</li>
-            <li>Basics in Java – Udemy</li>
-        </ul>
-    </div>
-</section>
+                <input type="password"
+                       id="experiencePassword"
+                       placeholder="Enter your password"
+                       autocomplete="off">
 
-<!-- CONTACT SECTION -->
-<section id="contact">
-    <h2 class="heading">Let's <span>Connect</span></h2>
+                <button type="button"
+                        id="togglePassword"
+                        aria-label="Show password">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
 
-    <p>Interested in opportunities and collaborations.</p>
+            </div>
 
-    <div class="contact-buttons">
-        <div class="email-container">
-            <button type="button"
-                    class="btn"
-                    id="emailBtn"
-                    aria-expanded="false"
-                    aria-controls="emailDisplay">
-                Email
+            <p id="passwordError" class="password-error"
+               role="alert" aria-live="polite"></p>
+
+            <button type="button" class="btn" id="unlockExperience">
+                <i class="fa-solid fa-unlock-keyhole"></i>
+                Unlock Experience
             </button>
 
-            <div id="emailDisplay" class="email-display">
-                <a href="mailto:chintala4swathi@gmail.com">
-                    chintala4swathi@gmail.com
-                </a>
-            </div>
         </div>
 
-        <a href="https://www.linkedin.com/in/chintala-swathi-91b274336/"
-           class="btn outline"
-           target="_blank" rel="noopener noreferrer">
-            LinkedIn
-        </a>
 
-        <a href="https://github.com/chintala4swathi-boop"
-           class="btn outline"
-           target="_blank" rel="noopener noreferrer">
-            GitHub
-        </a>
+        <!-- UNLOCKED INTERNSHIP CARDS -->
+        <div class="experience-container" id="experienceContent" hidden>
+
+            <!-- INFOSYS -->
+            <article class="experience-card">
+
+                <div class="experience-card-top">
+
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div class="experience-title">
+                        <h3>Infosys</h3>
+                        <span class="experience-role">
+                            Intern · Chatbot Development
+                        </span>
+                    </div>
+
+                    <span class="experience-status">
+                        Internship
+                    </span>
+
+                </div>
+
+                <p class="experience-description">
+                    Worked on chatbot-related development tasks as part
+                    of the internship. Gained practical exposure to
+                    conversational workflows, chatbot integration and
+                    backend development concepts.
+                </p>
+
+            </article>
+
+
+            <!-- LAZYINTERN -->
+            <article class="experience-card">
+
+                <div class="experience-card-top">
+
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+
+                    <div class="experience-title">
+                        <h3>LazyIntern</h3>
+                        <span class="experience-role">
+                            Testing Engineer Intern · Manual Testing
+                        </span>
+                    </div>
+
+                    <span class="experience-status completed">
+                        Completed
+                    </span>
+
+                </div>
+
+                <p class="experience-description">
+                    Worked on manual software testing activities, including
+                    understanding application functionality, executing
+                    test cases, identifying defects and checking application
+                    behavior. Gained practical knowledge of software testing
+                    fundamentals and quality assurance.
+                </p>
+
+                <div class="experience-duration">
+                    <i class="fa-regular fa-calendar"></i>
+                    22 December 2025 – 31 January 2026
+                </div>
+
+            </article>
+
+
+            <button type="button" class="btn lock-btn" id="lockExperience">
+                <i class="fa-solid fa-lock"></i>
+                Lock Experience
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+<section class="education" id="education">
+
+    <h2 class="heading">My <span>Education</span></h2>
+
+    <div class="education-container">
+
+        <!-- BTECH -->
+        <article class="education-card">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h3>B.Tech – Computer Science and Engineering</h3>
+
+            <p>Amrita Sai Institute of Science and Technology</p>
+
+            <p>2023 – 2027</p>
+
+            <p>CGPA: 8.90</p>
+
+        </article>
+
+
+        <!-- INTERMEDIATE -->
+        <article class="education-card">
+
+            <i class="fa-solid fa-school"></i>
+
+            <h3>Intermediate – MPC</h3>
+
+            <p>Sri Akshara Junior College, Kanchikacherla</p>
+
+            <p>Percentage: 94%</p>
+
+        </article>
+
+
+        <!-- SSC -->
+        <article class="education-card">
+
+            <i class="fa-solid fa-book"></i>
+
+            <h3>SSC – 10th Class</h3>
+
+            <p>ZPHS, Paritala</p>
+
+            <p>Percentage: 98.2%</p>
+
+        </article>
+
     </div>
+
 </section>
 
-</main>
+    <!-- CONTACT SECTION -->
+    <section class="contact section" id="contact">
 
-<!-- FOOTER -->
-<footer>
-    <p>
-        © <span id="year">2027</span> Chintala Swathi | Developer Portfolio
-    </p>
-</footer>
+        <h2 class="heading">Contact <span>Me</span></h2>
 
-<script src="script.js"></script>
+        <p class="contact-description">
+            Have an opportunity or want to connect? Feel free to reach out.
+        </p>
+
+        <div class="contact-container">
+
+            <a href="mailto:chintala4swathi@gmail.com"
+               class="contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                    <h3>Email Me</h3>
+                    <p>chintala4swathi@gmail.com</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/chintala-swathi-91b274336/"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-card">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+            </a>
+
+
+            <a href="https://github.com/chintala4swathi-boop"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-card">
+
+                <i class="fa-brands fa-github"></i>
+
+                <div>
+                    <h3>GitHub</h3>
+                    <p>Explore my projects</p>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            © <span id="currentYear"></span> Chintala Swathi.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
